@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { AnimateSharedLayout } from "framer-motion";
 import Toggle from "./Toggle";
 import { motion } from "framer-motion";
@@ -9,7 +8,8 @@ import useScroll from "../util/useScroll";
 const FaqSection = () => {
   const [element, controls] = useScroll();
   return (
-    <StyledFaq
+    <motion.div
+      className="faq-section"
       variants={fade}
       animate={controls}
       initial="hidden"
@@ -56,40 +56,8 @@ const FaqSection = () => {
           </p>
         </Toggle>
       </AnimateSharedLayout>
-    </StyledFaq>
+    </motion.div>
   );
 };
-
-const StyledFaq = styled(motion.div)`
-  min-height: 90vh;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 8rem;
-  color: white;
-  display: block;
-  span {
-    display: block;
-  }
-  h2 {
-    padding-bottom: 2rem;
-    font-weight: lighter;
-  }
-  .faq-line {
-    background: #ccc;
-    height: 0.2rem;
-    margin: 2rem 0rem;
-    width: 100%;
-  }
-  .question {
-    padding: 3rem 0rem;
-    cursor: pointer;
-  }
-  .answer {
-    padding: 2rem 0rem;
-    p {
-      padding: 1rem 0rem;
-    }
-  }
-`;
 
 export default FaqSection;

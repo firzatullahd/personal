@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const Wave = () => {
   return (
-    <StyledWaveSvg
+    <svg
+      className="svg-animation"
       viewBox="0 0 1440 363"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -19,17 +19,8 @@ const Wave = () => {
         exit={{ pathLength: 0 }}
         transition={{ duration: 2 }}
       />
-    </StyledWaveSvg>
+    </svg>
   );
 };
-
-const StyledWaveSvg = styled.svg`
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  @media (max-width: 450px) {
-    top: 25%;
-  }
-`;
 
 export default Wave;

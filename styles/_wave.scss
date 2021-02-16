@@ -1,0 +1,8 @@
+.svg-animation {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  @media (max-width: 450px) {
+    top: 25%;
+  }
+}

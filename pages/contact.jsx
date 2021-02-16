@@ -1,83 +1,45 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../util/animation";
-import styled from "styled-components";
 import ScrollTop from "../components/ScrollTop";
 
 const ContactUs = () => {
   return (
-    <StyledContacts
+    <motion.div
+      className="contact-page"
       variants={pageAnimation}
       initial="hidden"
       animate="show"
       exit="exit"
     >
-      <StyledTitle>
-        <StyledHide>
+      <div className="contact-title">
+        <div className="hide">
           <motion.h2 variants={titleAnimation}>Get In Touch.</motion.h2>
-        </StyledHide>
-      </StyledTitle>
+        </div>
+      </div>
       <div>
-        <StyledHide>
-          <StyledContact variants={titleAnimation}>
-            <StyledCircle />
+        <div className="hide">
+          <motion.div className="contact-section" variants={titleAnimation}>
+            <div className="circle" />
             <h2>Send us a message</h2>
-          </StyledContact>
-        </StyledHide>
-        <StyledHide>
-          <StyledContact variants={titleAnimation}>
-            <StyledCircle />
+          </motion.div>
+        </div>
+        <div className="hide">
+          <motion.div className="contact-section" variants={titleAnimation}>
+            <div className="circle" />
             <h2>Send us an email</h2>
-          </StyledContact>
-        </StyledHide>
-        <StyledHide>
-          <StyledContact variants={titleAnimation}>
-            <StyledCircle />
+          </motion.div>
+        </div>
+        <div className="hide">
+          <motion.div className="contact-section" variants={titleAnimation}>
+            <div className="circle" />
             <h2>Contact us through our social media</h2>
-          </StyledContact>
-        </StyledHide>
+          </motion.div>
+        </div>
       </div>
       <ScrollTop />
-    </StyledContacts>
+    </motion.div>
   );
 };
-
-const StyledContacts = styled(motion.div)`
-  background: white;
-  color: black;
-  padding: 5rem 8rem;
-  min-height: 90vh;
-  h2 {
-    color: black;
-  }
-  @media (max-width: 560px) {
-    padding: 3rem 2rem;
-  }
-`;
-
-const StyledTitle = styled.div`
-  margin-bottom: 4rem;
-  color: black;
-`;
-
-const StyledHide = styled.div`
-  overflow: hidden;
-`;
-
-const StyledCircle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #353535;
-`;
-
-const StyledContact = styled(motion.div)`
-  display: flex;
-  align-items: center;
-  h2 {
-    margin: 2rem;
-    font-size: 2.5rem;
-  }
-`;
 
 export default ContactUs;

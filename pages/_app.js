@@ -1,4 +1,5 @@
 // import App from 'next/app'
+import '../styles/app.scss';
 import Layout from '../components/Layout';
 import MovieState from '../util/MovieState.json';
 import React, { useState } from 'react'
