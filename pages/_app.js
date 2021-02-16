@@ -1,6 +1,6 @@
 // import App from 'next/app'
 import Layout from '../components/Layout';
-import MovieState from '../util/MovieState';
+import MovieState from '../util/MovieState.json';
 import React, { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {

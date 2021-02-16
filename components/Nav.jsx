@@ -61,7 +61,7 @@ const StyledNav = styled.nav`
   top: 0;
   z-index: 10;
   min-height: 10vh;
-  background: #282828;
+  /* background: #282828; */
   display: flex;
   margin: auto;
   justify-content: space-between;

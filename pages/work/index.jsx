@@ -19,15 +19,11 @@ const OurWork = ({ movies }) => {
       animate="show"
       exit="exit"
     >
-      <StyledFrame1 variants={slider}></StyledFrame1>
-      <StyledFrame2 variants={slider}></StyledFrame2>
-      <StyledFrame3 variants={slider}></StyledFrame3>
-      <StyledFrame4 variants={slider}></StyledFrame4>
       {movies.map((movie) => (
         <StyledMovie key={movie.title}>
           <motion.h2 variants={fade}>{movie.title}</motion.h2>
           <motion.div className="line" variants={lineAnimation}></motion.div>
-          <Link href={movie.url}>
+          <Link href="/">
             <a>
               <StyledHide>
                 <motion.img
