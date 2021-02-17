@@ -1,0 +1,13 @@
+nav {
+  position: sticky;
+  top: 0;
+  min-height: 7vh;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8rem;
+  span {
+    cursor: pointer;
+  }
+}

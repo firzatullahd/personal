@@ -9,35 +9,41 @@ import {
   slider,
 } from "../../util/animation";
 import ScrollTop from "../../components/ScrollTop";
+import Head from "next/Head";
 
 const OurWork = ({ movies }) => {
   return (
-    <motion.div
-      className="work-page"
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      exit="exit"
-    >
-      {movies.map((movie) => (
-        <div className="work-movie" key={movie.title}>
-          <motion.h2 variants={fade}>{movie.title}</motion.h2>
-          <motion.div className="line" variants={lineAnimation}></motion.div>
-          <Link href="/">
-            <a>
-              <div className="hide">
-                <motion.img
-                  variants={photoAnimation}
-                  src={movie.mainImg}
-                  alt={movie.title}
-                />
-              </div>
-            </a>
-          </Link>
-        </div>
-      ))}
-      <ScrollTop />
-    </motion.div>
+    <>
+      <Head>
+        <title>Work</title>
+      </Head>
+      <motion.div
+        className="work-page"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
+        {movies.map((movie) => (
+          <div className="work-movie" key={movie.title}>
+            <motion.h2 variants={fade}>{movie.title}</motion.h2>
+            <motion.div className="line" variants={lineAnimation}></motion.div>
+            <Link href="/">
+              <a>
+                <div className="hide">
+                  <motion.img
+                    variants={photoAnimation}
+                    src={movie.mainImg}
+                    alt={movie.title}
+                  />
+                </div>
+              </a>
+            </Link>
+          </div>
+        ))}
+        <ScrollTop />
+      </motion.div>
+    </>
   );
 };
 export default OurWork;

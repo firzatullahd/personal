@@ -47,6 +47,7 @@ nav {
     position: absolute;
     bottom: -80%;
     left: 60%;
+    overflow: hidden;
     @media (max-width: 560px) {
       left: 10%;
     }

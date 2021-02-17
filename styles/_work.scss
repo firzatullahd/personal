@@ -3,16 +3,19 @@
   overflow: hidden;
   padding: 5rem 8rem;
   z-index: 1;
-  h2 {
-    padding: 1rem 0rem;
-  }
+
   @media (max-width: 560px) {
     padding: 2rem 2rem;
   }
   .work-movie {
+    display: flex;
+    h2 {
+      padding: 1rem 0rem;
+    }
     padding-bottom: 10rem;
     z-index: 2;
     .line {
+      display: none;
       height: 0.5rem;
       background: #23d997;
       margin-bottom: 3rem;

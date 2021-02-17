@@ -32,7 +32,7 @@ const AboutSection = () => {
       <div className="image-container">
         <motion.img
           variants={photoAnimation}
-          src="./img/home1.png"
+          src="./img/firzatullahd2.png"
           alt="guy with a camera"
         />
       </div>
