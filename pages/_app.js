@@ -1,14 +1,12 @@
 // import App from 'next/app'
 import '../styles/app.scss';
 import Layout from '../components/Layout';
-import MovieState from '../util/MovieState.json';
 import React, { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
-    const [movies, setMovies] = useState(MovieState);
     return (
         <Layout>
-            <Component movies={movies} {...pageProps} />
+            <Component  {...pageProps} />
         </Layout>
     );
 }
