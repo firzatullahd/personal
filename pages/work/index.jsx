@@ -10,8 +10,9 @@ import {
 } from "../../util/animation";
 import ScrollTop from "../../components/ScrollTop";
 import Head from "next/Head";
+import movies from "../../util/movies.json";
 
-const OurWork = ({ movies }) => {
+const OurWork = () => {
   return (
     <>
       <Head>
@@ -28,7 +29,7 @@ const OurWork = ({ movies }) => {
           <div className="work-movie" key={movie.title}>
             <motion.h2 variants={fade}>{movie.title}</motion.h2>
             <motion.div className="line" variants={lineAnimation}></motion.div>
-            <Link href="/">
+            <Link href={`/work/${movie.id}`}>
               <a>
                 <div className="hide">
                   <motion.img
