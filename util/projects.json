@@ -1,0 +1,26 @@
+[
+  {
+    "title": "PT Enhade",
+    "mainImg": "./img/construction.jpg",
+    "id": "pt-enhade",
+    "repo": "",
+    "deployment": "http://enhade-git-main-firzatullahd.vercel.app/",
+    "description": "Whimsical and Figma are used to create wireframe and UI design, these two stages are carried out to ensure the expectations of the client and the product output that is made accordingly. The website is developed using Sass, React Js, and Next Js, for the time being, the website will be made static by fetching data from the JSON file that has been prepared, but on further development, CMS will be added, thus making client manage content easier."
+  },
+  {
+    "title": "React Music",
+    "mainImg": "./img/music.jpg",
+    "id": "good-times",
+    "deployment": "https://firzatullahd-music-player.web.app/",
+    "repo": "https://github.com/firzatullahd/music-player",
+    "description": "React Music is a digital music service that gives you access to streaming lots of lo-fi songs. The technology used in developing React Music is React Js, node-sass, and fontawesome, the audio data used is taken from https://chillhop.com/."
+  },
+  {
+    "title": "Ignite",
+    "mainImg": "./img/games.jpg",
+    "id": "the-racer",
+    "deployment": "http://rawg.firzatullahd.vercel.app/",
+    "repo": "https://github.com/firzatullahd/ignite",
+    "description": "Ignite is a platform to find information and discover video games, using the REST API provided by rawg.io and the project was developed with ReactJs, Redux, Styled Components, and Vercel."
+  }
+]

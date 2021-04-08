@@ -1,32 +1,47 @@
 .contact-page {
   // background: white;
-  color: whitek;
-  padding: 5rem 8rem;
+  color: white;
+  padding: 4rem 2rem;
   min-height: 90vh;
   h2 {
-    color: whitek;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
   }
   @media (max-width: 560px) {
     padding: 3rem 2rem;
   }
   .contact-title {
-    margin-bottom: 4rem;
-    color: whitek;
+    margin-bottom: 2rem;
+    color: white;
   }
   .hide {
     overflow: hidden;
     .contact-section {
       display: flex;
       align-items: center;
-      h2 {
-        margin: 2rem;
-        font-size: 2.5rem;
+      cursor: pointer;
+      h3 {
+        margin: 1rem 2rem;
+        font-size: 2rem;
+      }
+      span {
+        font-family: "Caveat", cursive;
+        font-size: 2rem;
+        color: $black;
+        font-weight: lighter;
+      }
+      &:hover {
+        span {
+          color: white;
+        }
       }
     }
     .circle {
       border-radius: 50%;
-      width: 3rem;
-      height: 3rem;
+      width: 1rem;
+      height: 1rem;
       background: white;
     }
   }

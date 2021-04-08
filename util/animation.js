@@ -55,6 +55,6 @@ export const lineAnimation = {
 }
 
 export const slider = {
-    hidden: { x: '-130%' },
-    show: { x: '100%', transition: { duration: 0.75, ease: "easeOut" } }
+    hidden: { x: '-150%' },
+    show: { x: '100%', transition: { duration: 0.8, ease: "easeOut" } }
 }

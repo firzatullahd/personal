@@ -1,13 +1,14 @@
 // import App from 'next/app'
 import '../styles/app.scss';
-import Layout from '../components/Layout';
-import React, { useState } from 'react'
+import Nav from '../components/Nav';
+import React from 'react'
 
 function MyApp({ Component, pageProps }) {
     return (
-        <Layout>
+        <>
+            <Nav />
             <Component  {...pageProps} />
-        </Layout>
+        </>
     );
 }
 
