@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AboutSection from "../components/AboutSection";
-import ServicesSection from "../components/ServicesSection";
-import FaqSection from "../components/FaqSection";
+import SkillsSection from "../components/SkillsSection";
+import JourneysSection from "../components/JourneysSection";
+import WhatsappBadge from "../components/WhatsappBadge";
 import { pageAnimation } from "../util/animation";
 import ScrollTop from "../components/ScrollTop";
 import Head from "next/Head";
@@ -11,7 +12,7 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>About</title>
+        <title>I'm firzatullahd</title>
       </Head>
       <motion.div
         variants={pageAnimation}
@@ -20,7 +21,9 @@ const AboutUs = () => {
         exit="exit"
       >
         <AboutSection />
-        <ServicesSection />
+        <SkillsSection />
+        <JourneysSection />
+        <WhatsappBadge />
         <ScrollTop />
       </motion.div>
     </>

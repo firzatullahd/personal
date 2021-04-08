@@ -1,0 +1,92 @@
+.projects-page {
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  z-index: 1;
+
+  @media (max-width: 560px) {
+    padding: 2rem 2rem;
+  }
+  .project-movie {
+    display: flex;
+    margin-bottom: 5rem;
+    .description {
+      flex: 2;
+      padding: 1rem 2rem 0 0;
+      h2 {
+        font-family: "Caveat", cursive;
+        // font-size: 1rem;
+        //  background: lightblue;
+      }
+      p {
+        font-size: 1.25rem;
+      }
+      a {
+        padding-right: 3rem;
+        text-decoration: underline;
+        // background: red;
+      }
+      .line {
+        display: block;
+        height: 0.5rem;
+        background: $accent-color;
+        // margin-bottom: 1rem;
+      }
+    }
+
+    // padding-bottom: 10rem;
+    z-index: 2;
+  }
+  .hide {
+    flex: 3;
+    overflow: hidden;
+    // background: green;
+    img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      @media (max-width: 560px) {
+        height: 50vh;
+      }
+    }
+  }
+}
+
+.frame1 {
+  position: fixed;
+  left: 10;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: #fffebf;
+}
+
+.frame2 {
+  position: fixed;
+  left: 10;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: #ff8efb;
+}
+
+.frame3 {
+  position: fixed;
+  left: 10;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: #8ed2ff;
+}
+.frame4 {
+  position: fixed;
+  left: 10;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: #8effa0;
+}

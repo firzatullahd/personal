@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { MdFileDownload } from "react-icons/md";
 import { titleAnimation, fade, photoAnimation } from "../util/animation";
 import Wave from "./Wave";
 
@@ -10,30 +10,29 @@ const AboutSection = () => {
       <div className="description">
         <div className="title">
           <div className="hide">
-            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
-          </div>
-          <div className="hide">
+            <motion.h3 variants={titleAnimation}>Hey, I'm</motion.h3>
             <motion.h2 variants={titleAnimation}>
-              your <span>dreams </span> come
+              <span>Firza</span>tullah Dwiko Ramadhan
             </motion.h2>
           </div>
-          <div className="hide">
-            <motion.h2 variants={titleAnimation}>true.</motion.h2>
-          </div>
         </div>
-        <motion.p variants={fade}>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills.
-        </motion.p>
-        <Link href="/contact">
-          <motion.button variants={fade}>Contact Us</motion.button>
-        </Link>
+        <a
+          target="blank"
+          // href="https://mail.google.com/mail/?view=cm&fs=1&to=firzatullahdwikoramadhan@gmail.com"
+          href="mailto:firzatullahdwikoramadhan@gmail.com"
+        >
+          <motion.button variants={fade}>Email me</motion.button>
+        </a>
+
+        <motion.a variants={fade} download href="./firzatullah-resume.pdf">
+          <MdFileDownload size="1.3rem" /> Download CV
+        </motion.a>
       </div>
       <div className="image-container">
         <motion.img
           variants={photoAnimation}
-          src="./img/firzatullahd2.png"
-          alt="guy with a camera"
+          src="./img/firzatullahd.png"
+          alt="guy standing"
         />
       </div>
       <Wave />

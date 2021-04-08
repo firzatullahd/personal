@@ -10,14 +10,14 @@ const Nav = () => {
     <nav>
       <h1>
         <Link href="/">
-          <a id="logo">Capture</a>
+          <a id="logo">firzatullahd</a>
         </Link>
       </h1>
       <ul>
         <li>
           <Link href="/">
             <a>
-              1. About Us
+              About
               <motion.div
                 className="line-animation"
                 transition={{ duration: 0.75 }}
@@ -28,14 +28,14 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link href="/work">
+          <Link href="/projects">
             <a>
-              2. Our Work
+              Projects
               <motion.div
                 className="line-animation"
                 transition={{ duration: 0.75 }}
                 initial={{ width: "0%" }}
-                animate={{ width: pathname === "/work" ? "50%" : "0%" }}
+                animate={{ width: pathname === "/projects" ? "50%" : "0%" }}
               />
             </a>
           </Link>
@@ -43,7 +43,7 @@ const Nav = () => {
         <li>
           <Link href="/contact">
             <a>
-              3. Contact Us
+              Contact
               <motion.div
                 className="line-animation"
                 transition={{ duration: 0.75 }}
